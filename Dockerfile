@@ -54,7 +54,7 @@ RUN git clone https://github.com/rrwick/Porechop.git /opt/Porechop && \
 RUN git clone https://github.com/rrwick/Filtlong.git /opt/Filtlong && \
     cd /opt/Filtlong && \
     make && \
-    cp filtlong /usr/local/bin/
+    cp bin/filtlong /usr/local/bin/  # Changed this line
 
 # Install PycoQC for QC reporting of Nanopore sequencing data
 RUN pip3 install pycoqc
